@@ -2,7 +2,7 @@
 
 require_relative '../lib/monopoly'
 
-game = Monopoly::Game.new
+game = Game.new
 
 10.times { game.player_roll_dice }
 
