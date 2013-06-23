@@ -1,9 +1,2 @@
-
-class Game
-  def player_roll_dice
-  end
-
-  def player_square
-    42
-  end
-end
+require_relative 'monopoly/game'
+require_relative 'monopoly/player'
