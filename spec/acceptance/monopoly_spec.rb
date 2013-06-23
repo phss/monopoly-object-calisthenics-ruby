@@ -6,11 +6,11 @@ describe 'Monopoly Rules' do
       pending
 
       given_dice_rolls_of 5, 3
-      player = Player.at(Square.GO)
+      player = Player.at(Square::GO)
 
       game.take_turn(player)
 
-      player.current_location.should == Square.B2
+      player.current_location.should == Square::B2
     end
   end
 
