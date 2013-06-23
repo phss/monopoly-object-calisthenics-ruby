@@ -5,12 +5,12 @@ describe 'Monopoly Rules' do
     it 'should move based relative to dice roll' do
       pending
 
-      given_dice_rolls_of 4, 3
-      player = Player.new(0)
+      given_dice_rolls_of 5, 3
+      player = Player.at(Square.GO)
 
       game.take_turn(player)
 
-      player.current_location.should == 7
+      player.current_location.should == Square.B2
     end
   end
 
