@@ -1,4 +1,5 @@
 class Square
+  attr_reader :index # TODO: remove this getter
 
   def initialize(index)
     @index = index
@@ -9,6 +10,10 @@ class Square
 
   def to_s
     "Square@#@index"
+  end
+
+  def ==(other)
+    @index == other.index
   end
 
 end

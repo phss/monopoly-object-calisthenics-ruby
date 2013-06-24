@@ -6,6 +6,8 @@ class RollDiceAndAdvanceRule
 
   def apply(player)
     roll_result = @dice_roller.roll
+
+    player.advance(roll_result)
   end
   
 end

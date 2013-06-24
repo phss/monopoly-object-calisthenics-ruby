@@ -6,8 +6,7 @@ describe RollDiceAndAdvanceRule do
   let(:rule) { RollDiceAndAdvanceRule.new(dice_roller) }
 
   it 'should advance player by the result of the dice roll' do
-    pending
-    dice_roller.stub(:roll).and_return(5)
+    dice_roller.stub(:roll).and_return(RollResult.new(5))
 
     rule.apply(player)
 

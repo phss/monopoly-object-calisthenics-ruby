@@ -8,4 +8,13 @@ describe Player do
     player.current_location.should == Square::GO
   end
 
+  it 'should advance player based on the roll result' do
+    player = Player.at(Square.new(8))
+    roll = RollResult.new(12)
+
+    player.advance(roll)
+
+    player.current_location.should == Square.new(20)
+  end
+
 end

@@ -4,7 +4,6 @@ describe 'Monopoly Rules' do
   describe '(dice rolling)' do
     it 'should move based relative to dice roll' do
       pending
-
       given_dice_rolls_of 5, 3
       player = Player.at(Square::GO)
 
