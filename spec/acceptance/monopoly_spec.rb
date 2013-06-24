@@ -3,7 +3,6 @@ describe 'Monopoly Rules' do
 
   describe '(dice rolling)' do
     it 'should move based relative to dice roll' do
-      pending
       given_dice_rolls_of 5, 3
       player = Player.at(Square::GO)
 
@@ -15,7 +14,8 @@ describe 'Monopoly Rules' do
 
 
   def given_dice_rolls_of(*rolls)
-    Kernel.stub!(:rand).with(6).and_return(*rolls) 
+    rand_rolls = rolls.map { |roll| roll - 1}
+    Kernel.stub!(:rand).with(6).and_return(*rand_rolls) 
   end
 
 end
