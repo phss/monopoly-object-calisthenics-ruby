@@ -12,6 +12,7 @@ class Player
     @current # TODO: breaking a rule for now
   end
 
+  # TODO: review method name
   def advance(roll)
     @current = roll.move_from(current_location)
   end
