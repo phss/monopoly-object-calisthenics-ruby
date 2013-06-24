@@ -1,15 +1,14 @@
 class Square
 
-  def initialize(name, index)
-    @name = name
+  def initialize(index)
     @index = index
   end
   
-  GO = Square.new(:GO, 0)
-  B2 = Square.new(:B2, 8)
+  GO = Square.new(0)
+  B2 = Square.new(8)
 
   def to_s
-    "Square #@name@#@index"
+    "Square@#@index"
   end
 
 end
