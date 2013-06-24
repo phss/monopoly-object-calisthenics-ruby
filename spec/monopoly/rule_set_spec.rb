@@ -7,8 +7,8 @@ describe RuleSet do
   let(:rule_set) { RuleSet.new(first_rule, second_rule) }
 
   it 'should apply rules in order' do
-    first_rule.should_receive(:apply).with(player).ordered
-    second_rule.should_receive(:apply).with(player).ordered
+    first_rule.should_receive(:apply_to).with(player).ordered
+    second_rule.should_receive(:apply_to).with(player).ordered
 
     rule_set.apply_rules_to(player)
   end

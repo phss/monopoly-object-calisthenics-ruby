@@ -4,7 +4,8 @@ class Game
   end
 
   def self.monopoly_rules
-    Game.new(RuleSet.new(RollDiceAndAdvanceRule.new(DiceRoller.new(6))))
+    monopoly = RuleSet.new(RollDiceAndAdvanceRule.new(DiceRoller.new(6)))
+    Game.new(monopoly)
   end
 
   def take_turn(player)

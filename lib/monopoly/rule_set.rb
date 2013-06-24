@@ -6,7 +6,7 @@ class RuleSet
 
   def apply_rules_to(player)
     @rules.each do |rule|
-      rule.apply(player)
+      rule.apply_to(player)
     end
   end
 
