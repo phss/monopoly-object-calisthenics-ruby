@@ -1,6 +1,6 @@
 class Game
-  def initialize(*rules)
-    @rules = rules # TODO: should encapsulate
+  def initialize(rule_set)
+    @rule_set = rule_set
   end
 
   def self.monopoly_rules
@@ -8,6 +8,6 @@ class Game
   end
 
   def take_turn(player)
-    @rules.each { |rule| rule.apply(player) }
+    @rule_set.apply_rules_to(player)
   end
 end
