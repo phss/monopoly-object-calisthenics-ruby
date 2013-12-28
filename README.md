@@ -2,6 +2,8 @@
 
 Despite the rather long name, this repository is an experiment in solving a programming assignment using the 9 rules of object calisthenics. Instead of Java, the language of choice is Ruby.
 
+Unfortunately it's still fairly incomplete. Will hopefully continue some point in the future.
+
 ## Object Calisthenics 
 
 Introduced by Jeff Bay in [The ThoughtWorks Anthology](http://pragprog.com/book/twa/thoughtworks-anthology), the set of rules are:
