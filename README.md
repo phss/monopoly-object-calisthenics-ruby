@@ -2,7 +2,7 @@
 
 Despite the rather long name, this repository is an experiment in solving a programming assignment using the 9 rules of object calisthenics. Instead of Java, the language of choice is Ruby.
 
-Unfortunately it's still fairly incomplete. Will hopefully continue some point in the future.
+Unfortunately it's still fairly incomplete. I will be starting over soon. Meanwhile, the current code is at the `archive`.
 
 ## Object Calisthenics 
 
